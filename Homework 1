@@ -1,1 +1,51 @@
+# Program Name: Assignment1.py
+# Course: IT3883/Section W01
+# Student Name: Gustavo Gonzalez
+# Assignment Number: Lab1
+# Due Date: 06/12/ 2026
+# Purpose: The program is created to present the user with a menu that contains four options that handle the data that will be added or removed from a buffer.
+# 1. https://www.geeksforgeeks.org/python/python-input-function/ 2. https://medium.com/@firozkaif27/create-a-python-menu-to-run-various-commands-7be4d70cc127
 
+# Creating the outputs for the various options based on the idea that the user will see the menu each time on start-up.
+def display_menu():
+    print("\n--- Menu ---")
+    print("1. Append data to input buffer")
+    print("2. Clear input buffer")
+    print("3. Display input buffer")
+    print("4. Exit")
+    print("------------")
+
+
+def main():
+# Creating a buffer that will utilize all of the appended strings while only saving each individual session to avoid backing up session selections.
+    input_buffer = ""
+# Displaying the menu and defining the choice user input 
+    while True:
+        display_menu()
+        choice = input("Enter your choice (1-4): ").strip()
+# Defining option 1 to append data to the input buffer and defining the "data" to be the user's text that will be appended. 
+        if choice == "1":
+            data = input("Enter text to append: ")
+            input_buffer += data
+            print("Data appended.")
+# Resetting the buffer to erase all data found in the buffer.
+        elif choice == "2":
+            input_buffer = ""
+            print("Cleared buffer.")
+# Creating the choice to output the current contents stored within the buffer with the option to output a statement if the buffer is empty.
+        elif choice == "3":
+            if input_buffer:
+                print(f"Input buffer: {input_buffer}")
+            else:
+                print("Input buffer is empty.")
+# Defining option 4 to end the program 
+        elif choice == "4":
+            print("Exiting program. Goodbye!")
+            break
+# Creating a system response to any input that is not a number between 1 and 4. 
+        else:
+            print("Invalid choice. Please enter a number between 1 and 4.")
+
+
+if __name__ == "__main__":
+    main()
