@@ -4,7 +4,7 @@
 # Assignment Number: Lab2
 # Due Date: 06/19/2026
 # Purpose: The program is created to read a file of student data and display the students in order of their average grades.
-# 1.
+# 1.https://www.geeksforgeeks.org/python/how-to-read-from-a-file-in-python/ 2. https://www.freecodecamp.org/news/python-import-from-file-importing-local-files-in-python/
 
 
 def main():
