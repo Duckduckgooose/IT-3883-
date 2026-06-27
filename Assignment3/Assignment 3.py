@@ -1,9 +1,9 @@
 # Program Name: Assignment3.py
 # Course: IT3883/Section W01
 # Student Name: Gustavo Gonzalez
-# Assignment Number: Lab2
+# Assignment Number: Lab3
 # Due Date: 06/26/2026
-# Purpose: The program is created to convert miles per gallon into kilometers per liter. The user will be 
+# Purpose: The program is created to convert miles per gallon into kilometers per liter. The user will be able to input any amount of miles per gallon and actively receive a live reaction from the program instead of waiting for the system to respond. It will allow the user to see the conversion quickly without waiting for the system's computation. 
 # 1. https://www.geeksforgeeks.org/python/python-gui-tkinter/ 2.https://www.geeksforgeeks.org/python/create-first-gui-application-using-python-tkinter/ 3. https://www.geeksforgeeks.org/python/python-tkinter-entry-widget/
 
 
